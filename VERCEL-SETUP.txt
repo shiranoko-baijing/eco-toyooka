@@ -1,0 +1,15 @@
+GitHub upload instructions
+
+1. Extract this ZIP.
+2. In GitHub eco-toyooka, choose Add file > Upload files.
+3. Drag the extracted folder contents into the upload area.
+4. Commit changes to main.
+5. Vercel will deploy the new main commit automatically.
+
+Vercel settings if needed:
+Root Directory: blank
+Install Command: pnpm install --frozen-lockfile
+Build Command: pnpm --filter @workspace/eco-toyooka run build
+Output Directory: artifacts/eco-toyooka/dist/public
+
+For Clerk login, add VITE_CLERK_PUBLISHABLE_KEY in Vercel Environment Variables.
